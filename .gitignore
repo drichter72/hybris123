@@ -1,6 +1,8 @@
 #log
 mydb.log
 
+/data/
+
 /log
 /temp
 /bin/ext-accelerator/
@@ -24,3 +26,4 @@ mydb.log
 /bin/ext-smartedit
 /bin/ext-webservices
 /bin/platform/
+/data/hsqldb/mydb.properties
