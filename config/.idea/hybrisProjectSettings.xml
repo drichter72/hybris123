@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HybrisProjectSettings">
+    <option name="followSymlink" value="true" />
+    <option name="hybrisDirectory" value="..\..\..\Users\daniel.richter\Desktop" />
+    <option name="hybrisProject" value="true" />
+    <option name="ideModulesFilesDirectory" value="$PROJECT_DIR$/idea-module-files" />
+    <option name="importedByVersion" value="8.2.4" />
+  </component>
+</project>
