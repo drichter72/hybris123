@@ -25,3 +25,5 @@ mydb.log
 /bin/ext-smartedit
 /bin/ext-webservices
 /bin/platform/
+
+*.class
