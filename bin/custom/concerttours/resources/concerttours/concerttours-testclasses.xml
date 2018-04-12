@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testclasses><concerttours><testclass>de.hybris.platform.concerttours.jalo.ConcerttoursTest</testclass><testclass>de.hybris.platform.concerttours.service.impl.DefaultConcerttoursServiceIntegrationTest</testclass></concerttours></testclasses>
