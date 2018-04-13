@@ -20,6 +20,7 @@
     <mvc:annotation-driven/>
     <context:annotation-config/>
     <context:component-scan base-package="de.hybris.platform.concerttours"/>
+    <context:component-scan base-package="concerttours.controller"/>
 
     <context:property-placeholder properties-ref="hybrisProperties"/>
 

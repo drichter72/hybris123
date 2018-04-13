@@ -1,4 +1,4 @@
-package de.hybris.platform.concerttours.controller;
+package concerttours.controller;
 
 import de.hybris.platform.catalog.CatalogVersionService;
 
