@@ -20,6 +20,7 @@
     <mvc:annotation-driven/>
     <context:annotation-config/>
     <context:component-scan base-package="de.hybris.platform.concerttours"/>
+
     <context:property-placeholder properties-ref="hybrisProperties"/>
 
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">

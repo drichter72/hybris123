@@ -24,13 +24,14 @@ import de.hybris.platform.concerttours.service.ConcerttoursService;
 @Controller
 public class ConcerttoursHelloController
 {
-	@Autowired
-	private ConcerttoursService concerttoursService;
+/*	@Autowired
+	private ConcerttoursService concerttoursService;*/
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String printWelcome(final ModelMap model)
 	{
-		model.addAttribute("logoUrl", concerttoursService.getHybrisLogoUrl(PLATFORM_LOGO_CODE));
+		System.out.println("Hello! Welcome method!");
+		//model.addAttribute("logoUrl", concerttoursService.getHybrisLogoUrl(PLATFORM_LOGO_CODE));
 		return "welcome";
 	}
 }
