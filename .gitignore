@@ -25,6 +25,6 @@ mydb.log
 /bin/ext-smartedit
 /bin/ext-webservices
 /bin/platform/
-/bin/custom/gensrc
+/bin/custom/concerttours/gensrc/
 
 *.class
