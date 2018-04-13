@@ -82,7 +82,7 @@ public class DefaultBandServiceIntegrationTest extends ServicelayerTest
 		assertNotNull("No tour found", tours);
 		Assert.assertEquals("not found one tour", 1, tours.size());
 		final Object[] objects = new Object[5];
-		final Collection<VariantProductModel> concerts = ((ProductModel) tours.toArray(objects)[0]).getVariants();
+		final Collection<VariantProductModel> concerts = (      (ProductModel) tours.toArray(objects)[0]    ).getVariants();
 		assertNotNull("No tour found", tours);
 		Assert.assertEquals("not found one tour", 6, concerts.size());
 	}
