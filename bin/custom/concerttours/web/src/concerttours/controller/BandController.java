@@ -23,7 +23,6 @@ public class BandController {
 
 	@RequestMapping(value = "/bands")
 	public String showBands(final Model model) {
-		System.out.println("get bands!!!");
 		final List<BandData> bands = bandFacade.getBands();
 		model.addAttribute("bands", bands);
 		return "BandList";
