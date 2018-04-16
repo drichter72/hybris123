@@ -118,4 +118,7 @@
 		<property name="productService" ref="productService"/>
 	</bean>
 
+	<!-- dynamic attribute handlers -->
+	<bean id="concertDaysUntilAttributeHandler" class="concerttours.attributehandlers.ConcertDaysUntilAttributeHandler"/>
+
 </beans>
