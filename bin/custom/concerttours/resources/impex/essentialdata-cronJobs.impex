@@ -3,6 +3,7 @@ INSERT_UPDATE CronJob; code[unique=true];job(code);singleExecutable;sessionLangu
 ;sendNewsCronJob;sendNewsJob;false;de
 
 # Define the trigger that periodically invokes the cron job
-INSERT_UPDATE Trigger;cronjob(code)[unique=true];cronExpression
-#% afterEach: impex.getLastImportedItem().setActivationTime(new Date());
-; sendNewsCronJob; 0/10 * * * * ?
+#auskommentiert, da fehler fliegen, alle 10 sekunden??? email konfigurieren? oder der fehler liegt woanders
+#INSERT_UPDATE Trigger;cronjob(code)[unique=true];cronExpression
+##% afterEach: impex.getLastImportedItem().setActivationTime(new Date());
+#; sendNewsCronJob; 0/10 * * * * ?
