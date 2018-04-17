@@ -137,4 +137,13 @@
 		<property name="modelService" ref="modelService"/>
 	</bean>
 
+	<!-- news service and cron job-->
+	<alias name="defaultNewsService" alias="newsService"/>
+	<bean id="defaultNewsService" class="concerttours.service.impl.DefaultNewsService">
+		<property name="newsDAO" ref="newsDAO"/>
+	</bean>
+	<bean id="sendNewsJob" class="concerttours.jobs.SendNewsJob" parent="abstractJobPerformable">
+		<property name="newsService" ref="newsService"/>
+	</bean>
+
 </beans>
