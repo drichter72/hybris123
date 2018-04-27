@@ -4,7 +4,7 @@
 $productCatalog=concertoursProductCatalog
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Online'])[unique=true,default=$productCatalog:Online]
 $medias=medias(code, $catalogVersion)
-$siteResource=jar:concerttours.constants.ConcerttoursConstants&/concerttours/bandimages
+$siteResource=jar:de.hybris.platform.concerttours.constants.ConcerttoursConstants&/concerttours/bandimages
 
 # Product catalog
 INSERT_UPDATE Catalog;id[unique=true]

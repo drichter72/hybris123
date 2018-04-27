@@ -30,7 +30,7 @@ public class DefaultBandFacade implements BandFacade {
 	public List<BandData> getBands() {
 		final List<BandModel> bandModels = bandService.getBands();
 		final List<BandData> bandFacadeData = new ArrayList<>();
-		if (bandModels != null && !bandModels.isEmpty()) //6.2
+		if (bandModels != null && !bandModels.isEmpty())
 		{
 			final String mediaFormatName = configService.getConfiguration().getString(BAND_LIST_FORMAT);
 			System.out.println("mediaFormatName:" + mediaFormatName);
