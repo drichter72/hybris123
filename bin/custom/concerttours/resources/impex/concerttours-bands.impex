@@ -15,25 +15,25 @@ INSERT_UPDATE CatalogVersion;catalog(id)[unique=true];version[unique=true];activ
 ;$productCatalog;Online;true;en;employeegroup
 
 INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion
-;bandList  ;rockSmallMediaFormat     ;$siteResource/rockSmall.jpg     ;;
-;bandDetail;rockBigMediaFormat       ;$siteResource/rockBig.jpg       ;;
-;bandList  ;danceSmallMediaFormat    ;$siteResource/danceSmall.jpg    ;;
-;bandDetail;danceBigMediaFormat      ;$siteResource/danceBig.jpg      ;;
-;bandList  ;jazzSmallMediaFormat     ;$siteResource/jazzSmall.jpg     ;;
-;bandDetail;jazzBigMediaFormat       ;$siteResource/jazzBig.jpg       ;;
-;bandList  ;bigbandSmallMediaFormat  ;$siteResource/bigbandSmall.jpg  ;;
-;bandDetail;bigbandBigMediaFormat    ;$siteResource/bigbandBig.jpg    ;;
-;bandList  ;omphaSmallMediaFormat    ;$siteResource/omphaSmall.jpg    ;;
-;bandDetail;omphaBigMediaFormat      ;$siteResource/omphaBig.jpg      ;;
-;bandList  ;orchestraSmallMediaFormat;$siteResource/orchestraSmall.jpg;;
-;bandDetail;orchestraBigMediaFormat  ;$siteResource/orchestraBig.jpg  ;;
+;bandList  ;rockSmallMedia     ;$siteResource/rockSmall.jpg     ;;
+;bandDetail;rockBigMedia       ;$siteResource/rockBig.jpg       ;;
+;bandList  ;danceSmallMedia    ;$siteResource/danceSmall.jpg    ;;
+;bandDetail;danceBigMedia      ;$siteResource/danceBig.jpg      ;;
+;bandList  ;jazzSmallMedia     ;$siteResource/jazzSmall.jpg     ;;
+;bandDetail;jazzBigMedia       ;$siteResource/jazzBig.jpg       ;;
+;bandList  ;bigbandSmallMedia  ;$siteResource/bigbandSmall.jpg  ;;
+;bandDetail;bigbandBigMedia    ;$siteResource/bigbandBig.jpg    ;;
+;bandList  ;omphaSmallMedia    ;$siteResource/omphaSmall.jpg    ;;
+;bandDetail;omphaBigMedia      ;$siteResource/omphaBig.jpg      ;;
+;bandList  ;orchestraSmallMedia;$siteResource/orchestraSmall.jpg;;
+;bandDetail;orchestraBigMedia  ;$siteResource/orchestraBig.jpg  ;;
 INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
-;yRockMediaContainer   ;rockSmallMediaFormat,rockBigMediaFormat          ;
-;yBandMediaContainer   ;danceSmallMediaFormat,danceBigMediaFormat        ;
-;yJazzMediaContainer   ;jazzSmallMediaFormat,jazzBigMediaFormat          ;
-;BannedMediaContainer  ;bigbandSmallMediaFormat,bigbandBigMediaFormat    ;
-;SirkenMediaContainer  ;omphaSmallMediaFormat,omphaBigMediaFormat        ;
-;TheChoirMediaContainer;orchestraSmallMediaFormat,orchestraBigMediaFormat;
+;yRockMediaContainer   ;rockSmallMedia,rockBigMedia          ;
+;yBandMediaContainer   ;danceSmallMedia,danceBigMedia        ;
+;yJazzMediaContainer   ;jazzSmallMedia,jazzBigMedia          ;
+;BannedMediaContainer  ;bigbandSmallMedia,bigbandBigMedia    ;
+;SirkenMediaContainer  ;omphaSmallMedia,omphaBigMedia        ;
+;TheChoirMediaContainer;orchestraSmallMedia,orchestraBigMedia;
 
 INSERT_UPDATE Band;code[unique=true];name;albumSales;image(qualifier)
 ;A001;yRock    ;1000000;yRockMediaContainer
