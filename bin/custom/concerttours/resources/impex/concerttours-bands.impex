@@ -15,18 +15,18 @@ INSERT_UPDATE CatalogVersion;catalog(id)[unique=true];version[unique=true];activ
 ;$productCatalog;Online;true;en;employeegroup
 
 INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion
-;bandList  ;rockSmallMediaFormat ;$siteResource/rockSmall.jpg     ;;
-;bandDetail;rockBigMediaFormat   ;$siteResource/rockBig.jpg       ;;
-;bandList  ;danceSmallMediaFormat;$siteResource/danceSmall.jpg    ;;
-;bandDetail;danceBigMediaFormat  ;$siteResource/danceBig.jpg      ;;
-;bandList  ;jazzSmallMediaFormat ;$siteResource/jazzSmall.jpg     ;;
-;bandDetail;jazzBigMediaFormat          ;$siteResource/jazzBig.jpg       ;;
-;bandList  ;bigbandSmallMediaFormat     ;$siteResource/bigbandSmall.jpg  ;;
-;bandDetail;bigbandBigMediaFormat       ;$siteResource/bigbandBig.jpg    ;;
-;bandList  ;omphaSmallMediaFormat       ;$siteResource/omphaSmall.jpg    ;;
-;bandDetail;omphaBigMediaFormat         ;$siteResource/omphaBig.jpg      ;;
-;bandList  ;orchestraSmallMediaFormat   ;$siteResource/orchestraSmall.jpg;;
-;bandDetail;orchestraBigMediaFormat     ;$siteResource/orchestraBig.jpg  ;;
+;bandList  ;rockSmallMediaFormat     ;$siteResource/rockSmall.jpg     ;;
+;bandDetail;rockBigMediaFormat       ;$siteResource/rockBig.jpg       ;;
+;bandList  ;danceSmallMediaFormat    ;$siteResource/danceSmall.jpg    ;;
+;bandDetail;danceBigMediaFormat      ;$siteResource/danceBig.jpg      ;;
+;bandList  ;jazzSmallMediaFormat     ;$siteResource/jazzSmall.jpg     ;;
+;bandDetail;jazzBigMediaFormat       ;$siteResource/jazzBig.jpg       ;;
+;bandList  ;bigbandSmallMediaFormat  ;$siteResource/bigbandSmall.jpg  ;;
+;bandDetail;bigbandBigMediaFormat    ;$siteResource/bigbandBig.jpg    ;;
+;bandList  ;omphaSmallMediaFormat    ;$siteResource/omphaSmall.jpg    ;;
+;bandDetail;omphaBigMediaFormat      ;$siteResource/omphaBig.jpg      ;;
+;bandList  ;orchestraSmallMediaFormat;$siteResource/orchestraSmall.jpg;;
+;bandDetail;orchestraBigMediaFormat  ;$siteResource/orchestraBig.jpg  ;;
 INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
 ;yRockMediaContainer   ;rockSmallMediaFormat,rockBigMediaFormat          ;
 ;yBandMediaContainer   ;danceSmallMediaFormat,danceBigMediaFormat        ;
