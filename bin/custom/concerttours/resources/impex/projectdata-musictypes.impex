@@ -7,3 +7,5 @@ INSERT_UPDATE Band;code[unique=true];types(code)
 ;A002;choral,pop
 ;A005;gospel
 ;A007;choral,classical
+;A008;rock
+;A009;rock,eighties

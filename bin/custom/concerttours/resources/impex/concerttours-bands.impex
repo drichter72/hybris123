@@ -27,6 +27,11 @@ INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=d
 ;bandDetail;omphaBigMedia      ;$siteResource/omphaBig.jpg      ;;
 ;bandList  ;orchestraSmallMedia;$siteResource/orchestraSmall.jpg;;
 ;bandDetail;orchestraBigMedia  ;$siteResource/orchestraBig.jpg  ;;
+;bandList  ;danzigSmallMedia;$siteResource/danzigSmall.jpg;;
+;bandDetail;danzigBigMedia  ;$siteResource/danzigBig.jpg  ;;
+;bandList  ;kidrockSmallMedia;$siteResource/kidrockSmall.jpg;;
+;bandDetail;kidrockBigMedia  ;$siteResource/kidrockBig.jpg  ;;
+
 INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
 ;yRockMediaContainer   ;rockSmallMedia,rockBigMedia          ;
 ;yBandMediaContainer   ;danceSmallMedia,danceBigMedia        ;
@@ -34,6 +39,8 @@ INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
 ;BannedMediaContainer  ;bigbandSmallMedia,bigbandBigMedia    ;
 ;SirkenMediaContainer  ;omphaSmallMedia,omphaBigMedia        ;
 ;TheChoirMediaContainer;orchestraSmallMedia,orchestraBigMedia;
+;DanzigMediaContainer;danzigSmallMedia,danzigBigMedia;
+;KidrockMediaContainer;kidrockSmallMedia,kidrockBigMedia;
 
 INSERT_UPDATE Band;code[unique=true];name;albumSales;image(qualifier)
 ;A001;yRock    ;1000000;yRockMediaContainer
@@ -43,3 +50,5 @@ INSERT_UPDATE Band;code[unique=true];name;albumSales;image(qualifier)
 ;A002;Sirken   ;2000   ;SirkenMediaContainer
 ;A005;The Choir;49000  ;TheChoirMediaContainer
 ;A007;The Quiet;1200   ;;
+;A008;Kid Rock ;1200   ;KidrockMediaContainer
+;A009;Danzig;47000  ;DanzigMediaContainer
